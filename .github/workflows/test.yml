@@ -21,6 +21,7 @@ jobs:
       run: |
         pip install moto[all]
         pip install pytest
+        pip uninstall responses -y
         pip install https://github.com/getsentry/responses/archive/refs/heads/master.zip
     - name: Test
       run: |
